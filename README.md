@@ -89,5 +89,18 @@ This particolar rule allow DCOM communication received from another machine on t
 
 ### Manage User and Groups
 
+In AD Users and Computers you can create Users, Groups and OU and other stuff. I already created some OUs:
 
+1. Windows Server
+2. Linux Machine
+3. IT
 
+In IT OU I created a group IT-Admin and a user that belongs to IT-Admin Groups. 
+
+### Create a starter GPOs
+
+From Server Manager, I opened Group Policy Management Tool and create there a Starter GPOs:
+
+![Create a starter GPO](/images/createStarterGPOs.png)
+
+I set some rule that can be easily tested. From this starter GPO, I'll create a GPO to link to another computer enrolled in AD DS.
