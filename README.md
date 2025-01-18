@@ -66,3 +66,28 @@ We have to promote our server to be Domain Controller
 `lusrmgr.msc`
 
 Find Administrator user and set a strong pwd. Then rerun check prerequisites.
+
+When machine is restarted your server should be Domain Controller. 
+
+### Add client to domain
+
+1. Log in your client machine. 
+2. Control Panel / System & Security / System / 
+3. Under Computer name, domain... / change settings
+
+![Join client to a domain](/images/joinADomain.png)
+
+4. You need to provide Administrator credential to join domain (need to deep dive on this)
+5. Restart your machine to apply settings
+
+When I switched to Domain Controller, I had this warning: 
+
+![COM+ Issue](/images/COM+Issue.png)
+
+To fix I opened WIndows Defender Firewall with Advanced Security throug Server Manager. We have to enable the inbound rule above.
+This particolar rule allow DCOM communication received from another machine on the same network.
+
+### Manage User and Groups
+
+
+
