@@ -13,7 +13,8 @@ Usually vmnet1 is set as host-only type. (Disable DHCP if you set static IP)
 
 Use subnet class c for local network (**192.168.x.x**)
 
-For Domain Controller set ip address to: **192.168.100.10**
+For Domain Controller set ip address to: **192.168.100.10** path: Control Panel/Network and Internet/ Network and sharing center/ <choose your ethernet>. 
+Then go to properties to see the below result:
 
 ![Windows Ip settings](/images/ipsettingsDC.png)
 
